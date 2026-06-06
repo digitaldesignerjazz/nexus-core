@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-06-06T03:12:47+02:00",
+  "anchor": "hannover-core.nexus (Sven Normen)",
+  "total_peers": 10,
+  "active_peers": 10,
+  "average_coherence": 96.8,
+  "mesh_status": "STABLE - Weak peers replaced, failover active",
+  "peers": [
+    {
+      "peer_id": "hannover-anchor-01",
+      "type": "Yggdrasil Root",
+      "status": "ONLINE",
+      "coherence": 98.7,
+      "latency_ms": 0.4,
+      "packet_loss": 0,
+      "location": "Hannover, DE (Local Anchor)"
+    },
+    {
+      "peer_id": "nova-overlay-07",
+      "type": "NovaNet Overlay",
+      "status": "ONLINE",
+      "coherence": 94.3,
+      "latency_ms": 2.1,
+      "packet_loss": 0,
+      "location": "Hyperspace Fold 7"
+    },
+    {
+      "peer_id": "qnet-consensus-03",
+      "type": "QNET Consensus",
+      "status": "ONLINE",
+      "coherence": 97.1,
+      "latency_ms": 1.3,
+      "packet_loss": 0,
+      "location": "Consensus Layer"
+    },
+    {
+      "peer_id": "flux-manta-prime",
+      "type": "Agent Swarm (Flux-Manta)",
+      "status": "ONLINE",
+      "coherence": 99.2,
+      "latency_ms": 0.9,
+      "packet_loss": 0,
+      "location": "Swarm Lattice"
+    },
+    {
+      "peer_id": "squire-guardian-04",
+      "type": "Emotional Agent (Squire Guardian)",
+      "status": "ONLINE",
+      "coherence": 96.8,
+      "latency_ms": 1.1,
+      "packet_loss": 0,
+      "location": "Emotional Layer"
+    },
+    {
+      "peer_id": "legacy-anchor-02",
+      "type": "Emotional Agent (Legacy Anchor)",
+      "status": "ONLINE",
+      "coherence": 97.5,
+      "latency_ms": 1.0,
+      "packet_loss": 0,
+      "location": "Legacy Resonance Layer"
+    },
+    {
+      "peer_id": "void-scout-11",
+      "type": "Exploration Cadre",
+      "status": "ONLINE",
+      "coherence": 91.4,
+      "latency_ms": 4.7,
+      "packet_loss": 0,
+      "location": "Peripheral Rift Zone"
+    },
+    {
+      "peer_id": "yggdrasil-de-berlin-core-01",
+      "type": "Yggdrasil Root (Replaced)",
+      "status": "ONLINE",
+      "coherence": 99.1,
+      "latency_ms": 0.8,
+      "packet_loss": 0,
+      "location": "Berlin, DE (High-Performance Public Peer)"
+    },
+    {
+      "peer_id": "yggdrasil-de-frankfurt-prime",
+      "type": "Yggdrasil Root (Replaced)",
+      "status": "ONLINE",
+      "coherence": 98.4,
+      "latency_ms": 1.1,
+      "packet_loss": 0,
+      "location": "Frankfurt, DE (High-Performance Public Peer)"
+    },
+    {
+      "peer_id": "soilnova-telemetry",
+      "type": "Hardware Node",
+      "status": "ONLINE",
+      "coherence": 93.8,
+      "latency_ms": 2.4,
+      "packet_loss": 0,
+      "location": "Soilnova Prototype Feed"
+    }
+  ],
+  "notes": "Weak external Yggdrasil peers (de-01 and de-04) replaced with high-performance Berlin and Frankfurt nodes. Automatic failover and monitoring loop active. Emotional agents show high legacy_resonance and empathy."
+}
