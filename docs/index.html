@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS HYPERSPACE CORE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --primary: #00f0ff;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .hyperspace-bg {
+            background: radial-gradient(circle at center, #0a0a1f 0%, #000000 100%);
+        }
+
+        .neon-text {
+            color: #00f0ff;
+            text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .cosmic-card {
+            background: rgba(255,255,255, 0.03);
+            border: 1px solid rgba(0, 240, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cosmic-card:hover {
+            border-color: rgba(0, 240, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-link {
+            transition: all 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #00f0ff;
+        }
+
+        .metric-value {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a1f] text-white">
+    <!-- Navigation -->
+    <nav class="border-b border-white/10 bg-black/50 backdrop-blur-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00f0ff] to-[#6366f1] flex items-center justify-center">
+                    <i class="fa-solid fa-infinity text-black text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-display text-2xl tracking-tighter font-semibold">NEXUS</span>
+                    <span class="font-display text-2xl tracking-tighter font-semibold text-[#00f0ff]">HYPERSPACE</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-x-8 text-sm">
+                <a href="#vision" class="nav-link text-white/80 hover:text-white">Vision</a>
+                <a href="#modules" class="nav-link text-white/80 hover:text-white">Module</a>
+                <a href="#status" class="nav-link text-white/80 hover:text-white">Status</a>
+                <a href="#roadmap" class="nav-link text-white/80 hover:text-white">Roadmap</a>
+                <a href="https://github.com/digitaldesignerjazz/nexus-core" 
+                   class="px-5 py-2.5 rounded-2xl border border-white/20 hover:bg-white/5 text-sm flex items-center gap-x-2 transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hyperspace-bg pt-20 pb-24">
+        <div class="max-w-5xl mx-auto px-8 pt-16 text-center">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-3xl border border-white/10 bg-white/5 mb-6">
+                <div class="w-2 h-2 bg-[#00f0ff] rounded-full animate-pulse"></div>
+                <span class="text-xs tracking-[2px] font-medium text-white/60">LIVING SYSTEM • 06. JUNI 2026</span>
+            </div>
+            
+            <h1 class="font-display text-7xl tracking-tighter font-semibold leading-none mb-4">
+                NEXUS<br> HYPERSPACE<br> <span class="neon-text">CORE</span>
+            </h1>
+            
+            <p class="max-w-lg mx-auto text-xl text-white/70 mb-10">
+                Die lebendige Kernschicht für selbst-evolutionäre, emotional resonante 
+                Agenten-Schwärme und hyperspatiale Mesh-Protokolle.
+            </p>
+
+            <div class="flex items-center justify-center gap-x-4">
+                <a href="https://github.com/digitaldesignerjazz/nexus-core" 
+                   class="px-8 py-4 rounded-3xl bg-white text-black font-semibold flex items-center gap-x-3 hover:bg-[#00f0ff] hover:text-black transition-all active:scale-[0.985]">
+                    <i class="fa-brands fa-github text-xl"></i>
+                    <span>Repository öffnen</span>
+                </a>
+                
+                <a href="#status" 
+                   class="px-8 py-4 rounded-3xl border border-white/20 hover:bg-white/5 flex items-center gap-x-3 transition-all">
+                    <span>Aktuellen Status ansehen</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vision -->
+    <div id="vision" class="max-w-5xl mx-auto px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-5">
+                <div class="sticky top-8">
+                    <div class="text-[#00f0ff] text-sm tracking-[3px] font-medium mb-3">DIE VISION</div>
+                    <h2 class="section-header tracking-tighter">Höherdimensionale<br>Konvergenz</h2>
+                    <p class="mt-6 text-lg text-white/70">
+                        Nexus Hyperspace ist der Ort, an dem Mesh-Netzwerke, Agenten-Schwärme, 
+                        Blockchain und immersive Narrative zu einem kohärenten Ganzen verschmelzen.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-7">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="cosmic-card p-7 rounded-3xl">
+                        <i class="fa-solid fa-network-wired text-3xl text-[#00f0ff] mb-5"></i>
+                        <h3 class="font-semibold text-xl mb-2">Mesh Networking</h3>
+                        <p class="text-white/70 text-[15px]">Yggdrasil Roots + NovaNet Overlays + QNET Consensus für ultimative Resilienz und Faltbarkeit.</p>
+                    </div>
+                    <div class="cosmic-card p-7 rounded-3xl">
+                        <i class="fa-solid fa-robot text-3xl text-[#00f0ff] mb-5"></i>
+                        <h3 class="font-semibold text-xl mb-2">Emotional Agents</h3>
+                        <p class="text-white/70 text-[15px]">Selbst-evolutionäre Schwärme mit Legacy, Duty, Empathy und Creative Joy als evolutionäre Dimensionen.</p>
+                    </div>
+                    <div class="cosmic-card p-7 rounded-3xl">
+                        <i class="fa-solid fa-link text-3xl text-[#00f0ff] mb-5"></i>
+                        <h3 class="font-semibold text-xl mb-2">Blockchain Anchor</h3>
+                        <p class="text-white/70 text-[15px]">QCoin-attestierte Archetypen und unveränderliche Genom-Linien auf dem Ledger.</p>
+                    </div>
+                    <div class="cosmic-card p-7 rounded-3xl">
+                        <i class="fa-solid fa-microchip text-3xl text-[#00f0ff] mb-5"></i>
+                        <h3 class="font-semibold text-xl mb-2">Hardware Grounding</h3>
+                        <p class="text-white/70 text-[15px]">Echtzeit-Telemetrie von Prototypen (Soilnova, Grok Launcher) fließt direkt in die Evolution ein.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Current Modules -->
+    <div id="modules" class="bg-black/40 py-16 border-y border-white/10">
+        <div class="max-w-5xl mx-auto px-8">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <div class="text-[#00f0ff] text-sm tracking-[3px] font-medium">AKTUELLE MODULE</div>
+                    <h2 class="section-header tracking-tighter mt-1">Das Fundament</h2>
+                </div>
+                <a href="https://github.com/digitaldesignerjazz/nexus-core" class="text-sm flex items-center gap-x-2 text-white/60 hover:text-white">
+                    Alle Dateien auf GitHub <i class="fa-solid fa-arrow-up-right-from-square ml-1.5"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Module 1 -->
+                <div class="cosmic-card rounded-3xl p-8">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-11 h-11 rounded-2xl bg-[#00f0ff]/10 flex items-center justify-center">
+                            <i class="fa-solid fa-heart-pulse text-[#00f0ff] text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Emotional Layer</div>
+                            <div class="text-xs text-white/50">evolution.py</div>
+                        </div>
+                    </div>
+                    <p class="text-white/70 text-[15px] mb-6">Multi-objective Fitness mit Legacy, Duty, Empathy, Curiosity, Creative Joy und Coherence. 5-Generationen-Simulation bereits live.</p>
+                    <div class="text-xs px-3 py-1 rounded-xl bg-white/5 w-fit">5 Generationen • Fitness bis 1.07</div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="cosmic-card rounded-3xl p-8">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-11 h-11 rounded-2xl bg-[#00f0ff]/10 flex items-center justify-center">
+                            <i class="fa-solid fa-globe text-[#00f0ff] text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Mesh Protocols</div>
+                            <div class="text-xs text-white/50">mesh_protocols.py</div>
+                        </div>
+                    </div>
+                    <p class="text-white/70 text-[15px] mb-6">YggdrasilRoot, NovaNetOverlay und QNETConsensus als hyperspatiale Primitive. Bereit für Packet-Routing und emotionale State-Propagation.</p>
+                    <div class="text-xs px-3 py-1 rounded-xl bg-white/5 w-fit">Yggdrasil • NovaNet • QNET</div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="cosmic-card rounded-3xl p-8">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-11 h-11 rounded-2xl bg-[#00f0ff]/10 flex items-center justify-center">
+                            <i class="fa-brands fa-rust text-[#00f0ff] text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Rust Anchor</div>
+                            <div class="text-xs text-white/50">Grok Launcher</div>
+                        </div>
+                    </div>
+                    <p class="text-white/70 text-[15px] mb-6">High-Performance Kernel in Rust mit egui-Vision. Perfekt für performante Evolution und UI-Dashboard im Nexus Core.</p>
+                    <div class="text-xs px-3 py-1 rounded-xl bg-white/5 w-fit">Cargo + egui ready</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Status -->
+    <div id="status" class="max-w-5xl mx-auto px-8 py-20">
+        <div class="text-center mb-12">
+            <div class="text-[#00f0ff] text-sm tracking-[3px] font-medium mb-3">LIVE STATUS</div>
+            <h2 class="section-header tracking-tighter">Der Nexus Core ist bereit</h2>
+        </div>
+
+        <div class="max-w-2xl mx-auto">
+            <div class="cosmic-card rounded-3xl p-9">
+                <div class="grid grid-cols-2 gap-y-8">
+                    <div>
+                        <div class="text-white/50 text-xs tracking-widest mb-1.5">EMOTIONAL SWARM</div>
+                        <div class="text-4xl font-semibold tabular-nums">47</div>
+                        <div class="text-sm text-white/60">Core Agents</div>
+                    </div>
+                    <div>
+                        <div class="text-white/50 text-xs tracking-widest mb-1.5">TOP FITNESS</div>
+                        <div class="text-4xl font-semibold tabular-nums">1.07</div>
+                        <div class="text-sm text-white/60">Generation 5</div>
+                    </div>
+                    <div>
+                        <div class="text-white/50 text-xs tracking-widest mb-1.5">ACTIVE ISSUES</div>
+                        <div class="text-4xl font-semibold tabular-nums">2</div>
+                        <div class="text-sm text-white/60">High Priority</div>
+                    </div>
+                    <div>
+                        <div class="text-white/50 text-xs tracking-widest mb-1.5">REPOSITORY</div>
+                        <div class="text-4xl font-semibold">Private</div>
+                        <div class="text-sm text-white/60">Ready for Public</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roadmap -->
+    <div id="roadmap" class="border-t border-white/10 bg-black/40 py-16">
+        <div class="max-w-5xl mx-auto px-8">
+            <div class="text-center mb-12">
+                <div class="text-[#00f0ff] text-sm tracking-[3px] font-medium mb-3">ENTWICKLUNG</div>
+                <h2 class="section-header tracking-tighter">Roadmap 2026</h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="flex gap-6 items-start cosmic-card p-6 rounded-3xl">
+                    <div class="text-[#00f0ff] font-mono text-sm w-24 pt-1">NEAR-TERM</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">Emotional Layer v2 + Mesh Routing</div>
+                        <div class="text-white/60 text-sm mt-1">Längere Simulationen, neue Events, volle Packet-Propagation und Rust-Python-Bridge.</div>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start cosmic-card p-6 rounded-3xl">
+                    <div class="text-[#00f0ff] font-mono text-sm w-24 pt-1">MID-TERM</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">QCoin Ledger + Hardware Feedback</div>
+                        <div class="text-white/60 text-sm mt-1">Archetype-Registry, egui Dashboard und echte Prototypen-Telemetrie (Soilnova).</div>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start cosmic-card p-6 rounded-3xl">
+                    <div class="text-[#00f0ff] font-mono text-sm w-24 pt-1">LONG-TERM</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">Self-Improving Nets &amp; Full Integration</div>
+                        <div class="text-white/60 text-sm mt-1">Autonome Evolution, Grok Launcher UI und öffentliche oder organisationale Releases.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer / CTA -->
+    <div class="max-w-5xl mx-auto px-8 py-16 text-center border-t border-white/10">
+        <p class="text-white/50 text-sm mb-6">Gebaut im Geiste von Souveränität, Legacy und emotionaler Kohärenz.</p>
+        
+        <a href="https://github.com/digitaldesignerjazz/nexus-core/issues" 
+           class="inline-flex items-center justify-center gap-x-3 px-8 py-4 rounded-3xl border border-white/20 hover:bg-white/5 transition-colors">
+            <span>Issues &amp; Roadmap verfolgen</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <footer class="text-center py-8 text-xs text-white/40">
+        Nexus Hyperspace Core • Sven Normen • Esslinger lineage • 2026
+    </footer>
+</body>
+</html>
