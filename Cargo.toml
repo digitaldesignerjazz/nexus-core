@@ -1,0 +1,16 @@
+[package]
+name = "nexus-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sven Normen <contact@esslinger.co>"]
+description = "Nexus Hyperspace Core — Rust anchor for Grok Launcher integration, agent evolution kernels, and high-performance mesh protocols"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/digitaldesignerjazz/nexus-core"
+
+[dependencies]
+# egui = "0.27"   # Uncomment when building UI/dashboard components
+# tokio = { version = "1", features = ["full"] }  # For async mesh / agent runtime
+# serde = { version = "1.0", features = ["derive"] }
+# serde_json = "1.0"
+
+[dev-dependencies]
