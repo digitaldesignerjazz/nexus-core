@@ -2,15 +2,38 @@
 name = "nexus-core"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.75"
 authors = ["Sven Normen <contact@esslinger.co>"]
-description = "Nexus Hyperspace Core — Rust anchor for Grok Launcher integration, agent evolution kernels, and high-performance mesh protocols"
+description = "Nexus Hyperspace Core — High-performance Rust foundation for Grok Launcher (egui), NovaNet/QNET mesh networking, XCoin/QCoin blockchain integration, and self-evolving AI agent swarms. Hybrid core bridging to Python emotional_layer_evolution and mesh_protocols layers."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/digitaldesignerjazz/nexus-core"
+keywords = ["mesh-networking", "blockchain", "ai-agents", "egui", "yggdrasil", "privacy", "async", "high-performance"]
+categories = ["network-programming", "cryptography", "command-line-utilities", "simulation"]
 
 [dependencies]
-# egui = "0.27"   # Uncomment when building UI/dashboard components
-# tokio = { version = "1", features = ["full"] }  # For async mesh / agent runtime
-# serde = { version = "1.0", features = ["derive"] }
-# serde_json = "1.0"
+tokio = { version = "1.38", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.5", features = ["derive", "env"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "ansi"] }
+# egui = "0.28"  # For Grok Launcher dashboard UI (uncomment with eframe)
+# eframe = "0.28"
+# pyo3 = { version = "0.21", features = ["auto-initialize"] }  # For tight Python FFI integration
 
 [dev-dependencies]
+tokio-test = "0.4"
+
+[lib]
+name = "nexus_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "nexus-core"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+strip = true
